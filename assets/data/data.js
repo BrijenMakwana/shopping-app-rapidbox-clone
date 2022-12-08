@@ -31,4 +31,25 @@ const categoriesData = [
   },
 ];
 
-export { categoriesData };
+const circleProductsData = [
+  {
+    id: "1",
+    imageUrl:
+      "https://images.unsplash.com/photo-1580902215262-9b941bc6eab3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80",
+    productType: "sneakers",
+  },
+  {
+    id: "2",
+    imageUrl:
+      "https://images.unsplash.com/photo-1668069226492-508742b03147?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    productType: "Formal Shoes",
+  },
+  {
+    id: "3",
+    imageUrl:
+      "https://images.unsplash.com/photo-1576792741377-eb0f4f6d1a47?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    productType: "Loafers",
+  },
+];
+
+export { categoriesData, circleProductsData };
