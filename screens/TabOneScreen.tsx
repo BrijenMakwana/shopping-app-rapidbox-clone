@@ -6,6 +6,7 @@ import {
   circleProductsHerData,
 } from "../assets/data/data";
 import ProductMatrix from "../components/ProductMatrix";
+import { productMatrixData } from "../assets/data/data";
 
 export default function TabOneScreen() {
   return (
@@ -21,7 +22,13 @@ export default function TabOneScreen() {
         heading="her wordrobe"
         products={circleProductsHerData}
       />
-      <ProductMatrix />
+      <ProductMatrix
+        heading={productMatrixData.heading}
+        imagesUrl={productMatrixData.imagesUrl}
+        textOne={productMatrixData.textOne}
+        textTwo={productMatrixData.textTwo}
+        textThree={productMatrixData.textThree}
+      />
     </ScrollView>
   );
 }

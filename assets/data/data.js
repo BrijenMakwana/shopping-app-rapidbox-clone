@@ -73,4 +73,22 @@ const circleProductsHerData = [
   },
 ];
 
-export { categoriesData, circleProductsHisData, circleProductsHerData };
+const productMatrixData = {
+  heading: "bestsellers",
+  imagesUrl: [
+    "https://images.unsplash.com/photo-1539185441755-769473a23570?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80",
+    "https://images.unsplash.com/photo-1516478177764-9fe5bd7e9717?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    "https://images.unsplash.com/photo-1514989940723-e8e51635b782?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+  ],
+  textOne: "Sneakers",
+  textTwo: "For Men",
+  textThree: "+ See All",
+};
+
+export {
+  categoriesData,
+  circleProductsHisData,
+  circleProductsHerData,
+  productMatrixData,
+};

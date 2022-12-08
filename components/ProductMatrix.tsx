@@ -1,42 +1,37 @@
 import { StyleSheet, Text, View, Image } from "react-native";
 import React from "react";
 
-const ProductMatrix = () => {
+export type ProductMatrixProps = {
+  heading: string;
+  imagesUrl: string[];
+  textOne: string;
+  textTwo: string;
+  textThree: string;
+};
+
+const ProductMatrix = (props: ProductMatrixProps) => {
+  const { heading, imagesUrl, textOne, textTwo, textThree } = props;
   return (
     <View style={styles.container}>
-      <Text style={styles.heading}>BESTSELLERS</Text>
+      <Text style={styles.heading}>{heading}</Text>
 
       {/* images container */}
       <View style={styles.imagesContainer}>
-        <Image
-          source={{
-            uri: "https://images.unsplash.com/photo-1514989940723-e8e51635b782?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-          }}
-          style={styles.image}
-        />
-        <Image
-          source={{
-            uri: "https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1112&q=80",
-          }}
-          style={styles.image}
-        />
-        <Image
-          source={{
-            uri: "https://images.unsplash.com/photo-1516478177764-9fe5bd7e9717?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-          }}
-          style={styles.image}
-        />
-        <Image
-          source={{
-            uri: "https://images.unsplash.com/photo-1539185441755-769473a23570?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80",
-          }}
-          style={styles.image}
-        />
+        {imagesUrl.map((item, index) => (
+          <Image
+            source={{
+              uri: item,
+            }}
+            style={styles.image}
+            key={index}
+          />
+        ))}
+
         {/* button */}
         <View style={styles.btnContainer}>
-          <Text style={styles.btnTextOne}>Sneakers</Text>
-          <Text style={styles.btnTextTwo}>for men</Text>
-          <Text style={styles.btnTextThree}>+ see all</Text>
+          <Text style={styles.btnTextOne}>{textOne}</Text>
+          <Text style={styles.btnTextTwo}>{textTwo}</Text>
+          <Text style={styles.btnTextThree}>{textThree}</Text>
         </View>
       </View>
     </View>
