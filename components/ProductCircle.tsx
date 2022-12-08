@@ -37,5 +37,7 @@ const styles = StyleSheet.create({
     fontSize: 18,
     marginTop: 10,
     textTransform: "capitalize",
+    fontWeight: "300",
+    textAlign: "center",
   },
 });
