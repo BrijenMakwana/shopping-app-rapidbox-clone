@@ -2,8 +2,16 @@ import { ImageBackground, StyleSheet, Text, View } from "react-native";
 import React from "react";
 import ProductCircle from "./ProductCircle";
 import { circleProductsData } from "../assets/data/data";
+import { useFonts } from "expo-font";
 
 const PorductBanner = () => {
+  const [fontsLoaded] = useFonts({
+    "Sacramento-Regular": require("../assets/fonts/Sacramento/Sacramento-Regular.ttf"),
+  });
+
+  if (!fontsLoaded) {
+    return null;
+  }
   return (
     <View style={styles.container}>
       <ImageBackground
@@ -12,7 +20,7 @@ const PorductBanner = () => {
         }}
         style={styles.imageBackground}
       >
-        <Text style={styles.heading}>his worldrobe</Text>
+        <Text style={styles.heading}>his wordrobe</Text>
         <View style={styles.productsContainer}>
           {circleProductsData.map((item) => (
             <ProductCircle
@@ -39,13 +47,15 @@ const styles = StyleSheet.create({
     resizeMode: "cover",
   },
   heading: {
-    fontSize: 25,
+    fontSize: 40,
     textAlign: "center",
     marginTop: 20,
+    letterSpacing: 2,
+    fontFamily: "Sacramento-Regular",
   },
   productsContainer: {
     flexDirection: "row",
-    marginTop: 50,
+    marginTop: 35,
     alignItems: "center",
     justifyContent: "space-around",
   },
