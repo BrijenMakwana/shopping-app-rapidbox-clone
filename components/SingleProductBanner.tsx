@@ -60,6 +60,7 @@ const styles = StyleSheet.create({
     fontSize: 27,
     textAlign: "center",
     fontWeight: "600",
+    textTransform: "uppercase",
   },
   btnContainer: {
     backgroundColor: "#000",
@@ -71,6 +72,7 @@ const styles = StyleSheet.create({
     color: "yellow",
     fontSize: 14,
     fontWeight: "300",
+    textTransform: "capitalize",
   },
   rightContainer: {},
   image: {
