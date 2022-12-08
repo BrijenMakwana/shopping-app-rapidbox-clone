@@ -1,14 +1,15 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, ScrollView } from "react-native";
 import Categories from "../components/Categories";
 import PorductBanner from "../components/PorductBanner";
 import {
   circleProductsHisData,
   circleProductsHerData,
 } from "../assets/data/data";
+import ProductMatrix from "../components/ProductMatrix";
 
 export default function TabOneScreen() {
   return (
-    <View style={styles.container}>
+    <ScrollView style={styles.container}>
       <Categories />
       <PorductBanner
         backgroundImage="https://images.unsplash.com/photo-1614853035846-77b0a40a6b5c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
@@ -20,7 +21,8 @@ export default function TabOneScreen() {
         heading="her wordrobe"
         products={circleProductsHerData}
       />
-    </View>
+      <ProductMatrix />
+    </ScrollView>
   );
 }
 
