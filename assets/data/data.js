@@ -132,10 +132,18 @@ const ProductCategoryCardsData = [
   },
 ];
 
+const promiseData = [
+  "Factory Prices Guaranteed",
+  "Ouality Products Guaranteed",
+  "Fast and On Time Delivery",
+  "No Questions Asked Refund",
+];
+
 export {
   categoriesData,
   circleProductsHisData,
   circleProductsHerData,
   productMatrixData,
   ProductCategoryCardsData,
+  promiseData,
 };

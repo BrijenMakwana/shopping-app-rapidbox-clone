@@ -6,12 +6,13 @@ import {
   circleProductsHerData,
 } from "../assets/data/data";
 import ProductMatrix from "../components/ProductMatrix";
-import { productMatrixData } from "../assets/data/data";
+import { productMatrixData, promiseData } from "../assets/data/data";
 import SingleProductBanner from "../components/SingleProductBanner";
 import ComboBanner from "../components/ComboBanner";
 import FanCard from "../components/FanCard";
 import ProductCategoriesCardContainer from "../components/ProductCategoriesCardContainer";
 import HorizontalBanner from "../components/HorizontalBanner";
+import PromiseBanner from "../components/PromiseBanner";
 
 export default function TabOneScreen() {
   return (
@@ -39,6 +40,7 @@ export default function TabOneScreen() {
       <FanCard />
       <ProductCategoriesCardContainer />
       <HorizontalBanner />
+      <PromiseBanner promises={promiseData} />
     </ScrollView>
   );
 }
