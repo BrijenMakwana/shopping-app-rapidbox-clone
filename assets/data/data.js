@@ -86,9 +86,56 @@ const productMatrixData = {
   textThree: "+ See All",
 };
 
+const ProductCategoryCardsData = [
+  {
+    id: "1",
+    imageUrl:
+      "https://images.unsplash.com/photo-1600269452121-4f2416e55c28?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80",
+    categoryName: "sneakers",
+  },
+
+  {
+    id: "2",
+    imageUrl:
+      "https://images.unsplash.com/photo-1520975916090-3105956dac38?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+    categoryName: "jackets",
+  },
+  {
+    id: "3",
+    imageUrl:
+      "https://images.unsplash.com/photo-1620198360849-7575fec902bd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80",
+    categoryName: "casual shoes",
+  },
+  {
+    id: "4",
+    imageUrl:
+      "https://images.unsplash.com/photo-1542327821-87a5f0fb3c9f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80",
+    categoryName: "round necks",
+  },
+  {
+    id: "5",
+    imageUrl:
+      "https://images.unsplash.com/photo-1530981785497-a62037228fe9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+    categoryName: "tops",
+  },
+  {
+    id: "6",
+    imageUrl:
+      "https://images.unsplash.com/photo-1620012253295-c15cc3e65df4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80",
+    categoryName: "shirts",
+  },
+  {
+    id: "7",
+    imageUrl:
+      "https://images.unsplash.com/photo-1495385794356-15371f348c31?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=670&q=80",
+    categoryName: "dresses",
+  },
+];
+
 export {
   categoriesData,
   circleProductsHisData,
   circleProductsHerData,
   productMatrixData,
+  ProductCategoryCardsData,
 };

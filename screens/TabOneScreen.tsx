@@ -10,6 +10,7 @@ import { productMatrixData } from "../assets/data/data";
 import SingleProductBanner from "../components/SingleProductBanner";
 import ComboBanner from "../components/ComboBanner";
 import FanCard from "../components/FanCard";
+import ProductCategoriesCardContainer from "../components/ProductCategoriesCardContainer";
 
 export default function TabOneScreen() {
   return (
@@ -35,6 +36,7 @@ export default function TabOneScreen() {
       <SingleProductBanner />
       <ComboBanner />
       <FanCard />
+      <ProductCategoriesCardContainer />
     </ScrollView>
   );
 }
