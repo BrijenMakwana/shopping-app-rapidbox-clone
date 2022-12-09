@@ -11,6 +11,7 @@ import SingleProductBanner from "../components/SingleProductBanner";
 import ComboBanner from "../components/ComboBanner";
 import FanCard from "../components/FanCard";
 import ProductCategoriesCardContainer from "../components/ProductCategoriesCardContainer";
+import HorizontalBanner from "../components/HorizontalBanner";
 
 export default function TabOneScreen() {
   return (
@@ -37,6 +38,7 @@ export default function TabOneScreen() {
       <ComboBanner />
       <FanCard />
       <ProductCategoriesCardContainer />
+      <HorizontalBanner />
     </ScrollView>
   );
 }
