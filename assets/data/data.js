@@ -152,6 +152,30 @@ const productMatrixData2 = {
   textThree: "+ explore now",
 };
 
+const ProductThreeImagesDataHis = {
+  heding: "top 10 picks for him",
+  imagesUrl: [
+    "https://images.unsplash.com/photo-1579338559194-a162d19bf842?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+    "https://images.unsplash.com/photo-1549298916-f52d724204b4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1113&q=80",
+    "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+  ],
+  textOne: "fab footwear",
+  textTwo: "top 10 men sneakers",
+  textThree: "+grab now",
+};
+
+const ProductThreeImagesDataHer = {
+  heding: "top 10 picks for her",
+  imagesUrl: [
+    "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=698&q=80",
+    "https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1112&q=80",
+    "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+  ],
+  textOne: "your sole mate",
+  textTwo: "top 10 women sneakers",
+  textThree: "+grab now",
+};
+
 export {
   categoriesData,
   circleProductsHisData,
@@ -160,4 +184,6 @@ export {
   ProductCategoryCardsData,
   promiseData,
   productMatrixData2,
+  ProductThreeImagesDataHis,
+  ProductThreeImagesDataHer,
 };

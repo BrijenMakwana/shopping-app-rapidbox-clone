@@ -7,13 +7,19 @@ import {
   productMatrixData2,
 } from "../assets/data/data";
 import ProductMatrix from "../components/ProductMatrix";
-import { productMatrixData, promiseData } from "../assets/data/data";
+import {
+  productMatrixData,
+  promiseData,
+  ProductThreeImagesDataHis,
+  ProductThreeImagesDataHer,
+} from "../assets/data/data";
 import SingleProductBanner from "../components/SingleProductBanner";
 import ComboBanner from "../components/ComboBanner";
 import FanCard from "../components/FanCard";
 import ProductCategoriesCardContainer from "../components/ProductCategoriesCardContainer";
 import HorizontalBanner from "../components/HorizontalBanner";
 import PromiseBanner from "../components/PromiseBanner";
+import ProductThreeImage from "../components/ProductThreeImage";
 
 export default function TabOneScreen() {
   return (
@@ -48,6 +54,20 @@ export default function TabOneScreen() {
         textOne={productMatrixData2.textOne}
         textTwo={productMatrixData2.textTwo}
         textThree={productMatrixData2.textThree}
+      />
+      <ProductThreeImage
+        heading={ProductThreeImagesDataHis.heding}
+        imagesUrl={ProductThreeImagesDataHis.imagesUrl}
+        btnTextOne={ProductThreeImagesDataHis.textOne}
+        btnTextTwo={ProductThreeImagesDataHis.textTwo}
+        btnTextThree={ProductThreeImagesDataHis.textThree}
+      />
+      <ProductThreeImage
+        heading={ProductThreeImagesDataHer.heding}
+        imagesUrl={ProductThreeImagesDataHer.imagesUrl}
+        btnTextOne={ProductThreeImagesDataHer.textOne}
+        btnTextTwo={ProductThreeImagesDataHer.textTwo}
+        btnTextThree={ProductThreeImagesDataHer.textThree}
       />
     </ScrollView>
   );
