@@ -64,10 +64,11 @@ const styles = StyleSheet.create({
   btnContainer: {
     backgroundColor: "#fff",
     position: "absolute",
-    width: 130,
-    height: 130,
+    minWidth: 130,
+    minHeight: 130,
     justifyContent: "center",
     alignItems: "center",
+    padding: 10,
   },
   btnTextOne: {
     fontSize: 25,

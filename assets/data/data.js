@@ -139,6 +139,19 @@ const promiseData = [
   "No Questions Asked Refund",
 ];
 
+const productMatrixData2 = {
+  heading: "New Collection",
+  imagesUrl: [
+    "https://images.unsplash.com/photo-1534653299134-96a171b61581?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=975&q=80",
+    "https://images.unsplash.com/photo-1535043934128-cf0b28d52f95?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    "https://images.unsplash.com/photo-1601924638867-3a6de6b7a500?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    "https://images.unsplash.com/photo-1494955464529-790512c65305?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80",
+  ],
+  textOne: "must have",
+  textTwo: "flats & bellies",
+  textThree: "+ explore now",
+};
+
 export {
   categoriesData,
   circleProductsHisData,
@@ -146,4 +159,5 @@ export {
   productMatrixData,
   ProductCategoryCardsData,
   promiseData,
+  productMatrixData2,
 };

@@ -4,6 +4,7 @@ import PorductBanner from "../components/PorductBanner";
 import {
   circleProductsHisData,
   circleProductsHerData,
+  productMatrixData2,
 } from "../assets/data/data";
 import ProductMatrix from "../components/ProductMatrix";
 import { productMatrixData, promiseData } from "../assets/data/data";
@@ -41,6 +42,13 @@ export default function TabOneScreen() {
       <ProductCategoriesCardContainer />
       <HorizontalBanner />
       <PromiseBanner promises={promiseData} />
+      <ProductMatrix
+        heading={productMatrixData2.heading}
+        imagesUrl={productMatrixData2.imagesUrl}
+        textOne={productMatrixData2.textOne}
+        textTwo={productMatrixData2.textTwo}
+        textThree={productMatrixData2.textThree}
+      />
     </ScrollView>
   );
 }
