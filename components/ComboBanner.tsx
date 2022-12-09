@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
   productsContainer: {
     flexDirection: "row",
     justifyContent: "space-between",
-    marginTop: 10,
+    marginTop: 12,
   },
   productCard: {
     backgroundColor: "#fff",
