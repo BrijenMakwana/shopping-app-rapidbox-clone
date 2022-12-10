@@ -12,7 +12,7 @@ import {
   promiseData,
   ProductThreeImagesDataHis,
   ProductThreeImagesDataHer,
-  productItemData,
+  sneakersData,
 } from "../assets/data/data";
 import SingleProductBanner from "../components/SingleProductBanner";
 import ComboBanner from "../components/ComboBanner";
@@ -28,7 +28,7 @@ export default function TabOneScreen() {
     <View style={styles.container}>
       {/* products */}
       <FlatList
-        data={productItemData}
+        data={sneakersData}
         numColumns={2}
         renderItem={({ item }) => (
           <ProductItem

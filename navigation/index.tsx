@@ -20,6 +20,7 @@ import { RootStackParamList, RootTabParamList } from "../types";
 import CategoriesScreen from "../screens/CategoriesScreen";
 import RewardsScreen from "../screens/RewardsScreen";
 import BagScreen from "../screens/BagScreen";
+import ProductsScreen from "../screens/ProductsScreen";
 
 export default function Navigation({
   colorScheme,
@@ -45,6 +46,11 @@ function RootNavigator() {
         name="Root"
         component={BottomTabNavigator}
         options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="Products"
+        component={ProductsScreen}
+        options={{ headerShown: true }}
       />
     </Stack.Navigator>
   );

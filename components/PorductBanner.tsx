@@ -1,7 +1,14 @@
-import { ImageBackground, StyleSheet, Text, View } from "react-native";
+import {
+  ImageBackground,
+  Pressable,
+  StyleSheet,
+  Text,
+  View,
+} from "react-native";
 import React from "react";
 import ProductCircle from "./ProductCircle";
 import { useFonts } from "expo-font";
+import { useNavigation } from "@react-navigation/native";
 
 export type PorductBannerProps = {
   backgroundImage: string;
@@ -18,12 +25,16 @@ const PorductBanner = (props: PorductBannerProps) => {
   const [fontsLoaded] = useFonts({
     "Sacramento-Regular": require("../assets/fonts/Sacramento/Sacramento-Regular.ttf"),
   });
+  const navigation = useNavigation();
 
   if (!fontsLoaded) {
     return null;
   }
   return (
-    <View style={styles.container}>
+    <Pressable
+      style={styles.container}
+      onPress={() => navigation.navigate("Products")}
+    >
       <ImageBackground
         source={{
           uri: backgroundImage,
@@ -41,7 +52,7 @@ const PorductBanner = (props: PorductBannerProps) => {
           ))}
         </View>
       </ImageBackground>
-    </View>
+    </Pressable>
   );
 };
 
