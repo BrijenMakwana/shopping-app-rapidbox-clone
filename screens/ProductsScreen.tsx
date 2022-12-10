@@ -1,5 +1,5 @@
 import { StyleSheet, FlatList, View } from "react-native";
-import React, { useState } from "react";
+import React from "react";
 import {
   sneakersData,
   jacketsData,
@@ -13,7 +13,6 @@ import ProductItem from "../components/ProductItem";
 import { useRoute } from "@react-navigation/native";
 
 const ProductsScreen = () => {
-  const [productData, setproductData] = useState("sneakersData");
   const route = useRoute();
 
   const productdata = (): any => {
