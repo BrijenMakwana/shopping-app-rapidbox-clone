@@ -25,6 +25,6 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: "row",
     backgroundColor: "#fff",
-    padding: 15,
+    padding: 10,
   },
 });
