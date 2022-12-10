@@ -176,6 +176,49 @@ const ProductThreeImagesDataHer = {
   textThree: "+grab now",
 };
 
+const productItemData = [
+  {
+    id: "1",
+    image:
+      "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+    actualPrice: 1000,
+    sellingPrice: 750,
+    rating: 4,
+  },
+  {
+    id: "2",
+    image:
+      "https://images.unsplash.com/photo-1560769629-975ec94e6a86?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80",
+    actualPrice: 1200,
+    sellingPrice: 950,
+    rating: 5,
+  },
+  {
+    id: "3",
+    image:
+      "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80",
+    actualPrice: 800,
+    sellingPrice: 600,
+    rating: 3,
+  },
+  {
+    id: "4",
+    image:
+      "https://images.unsplash.com/photo-1603808033192-082d6919d3e1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80",
+    actualPrice: 1500,
+    sellingPrice: 1250,
+    rating: 4,
+  },
+  {
+    id: "5",
+    image:
+      "https://images.unsplash.com/photo-1605408499391-6368c628ef42?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+    actualPrice: 1700,
+    sellingPrice: 1350,
+    rating: 5,
+  },
+];
+
 export {
   categoriesData,
   circleProductsHisData,
@@ -186,4 +229,5 @@ export {
   productMatrixData2,
   ProductThreeImagesDataHis,
   ProductThreeImagesDataHer,
+  productItemData,
 };
