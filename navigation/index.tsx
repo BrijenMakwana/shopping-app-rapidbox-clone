@@ -21,6 +21,7 @@ import CategoriesScreen from "../screens/CategoriesScreen";
 import RewardsScreen from "../screens/RewardsScreen";
 import BagScreen from "../screens/BagScreen";
 import ProductsScreen from "../screens/ProductsScreen";
+import ProductScreen from "../screens/ProductScreen";
 
 export default function Navigation({
   colorScheme,
@@ -50,6 +51,11 @@ function RootNavigator() {
       <Stack.Screen
         name="Products"
         component={ProductsScreen}
+        options={{ headerShown: true }}
+      />
+      <Stack.Screen
+        name="Product"
+        component={ProductScreen}
         options={{ headerShown: true }}
       />
     </Stack.Navigator>

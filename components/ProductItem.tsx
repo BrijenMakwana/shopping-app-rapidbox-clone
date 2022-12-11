@@ -1,6 +1,7 @@
-import { Image, StyleSheet, Text, View } from "react-native";
+import { Image, Pressable, StyleSheet, Text, View } from "react-native";
 import React from "react";
 import { Entypo } from "@expo/vector-icons";
+import { useNavigation } from "@react-navigation/native";
 
 export type ProductItemProps = {
   image: string;
@@ -11,9 +12,13 @@ export type ProductItemProps = {
 
 const ProductItem = (props: ProductItemProps) => {
   const { image, actualPrice, sellingPrice, rating } = props;
+  const navigation = useNavigation();
 
   return (
-    <View style={styles.container}>
+    <Pressable
+      style={styles.container}
+      onPress={() => navigation.navigate("Product")}
+    >
       <Image
         source={{
           uri: image,
@@ -34,7 +39,7 @@ const ProductItem = (props: ProductItemProps) => {
           <Text style={styles.rating}>{rating}</Text>
         </View>
       </View>
-    </View>
+    </Pressable>
   );
 };
 
@@ -44,7 +49,7 @@ const styles = StyleSheet.create({
   container: {
     borderWidth: 0.5,
     borderColor: "lightgrey",
-    width: 214,
+    width: "50%",
   },
   image: {
     width: "100%",
