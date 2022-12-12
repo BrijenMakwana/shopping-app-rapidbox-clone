@@ -66,7 +66,7 @@ const styles = StyleSheet.create({
     justifyContent: "space-around",
   },
   heading: {
-    color: "#FFD631",
+    color: "#FFF200",
     fontSize: 25,
     textTransform: "uppercase",
   },
@@ -75,7 +75,7 @@ const styles = StyleSheet.create({
     height: 200,
   },
   btnContainer: {
-    backgroundColor: "#FFD631",
+    backgroundColor: "#FFF200",
     borderRadius: 7,
     flexDirection: "row",
     padding: 7,

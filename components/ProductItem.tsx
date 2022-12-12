@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
     height: 270,
   },
   premiumContainer: {
-    backgroundColor: "#FFF038",
+    backgroundColor: "#FFF200",
     position: "absolute",
     paddingHorizontal: 10,
     paddingVertical: 5,

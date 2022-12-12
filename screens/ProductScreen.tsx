@@ -199,11 +199,11 @@ const ProductScreen = () => {
             </View>
             <Text style={styles.name}>Atom brown Sneakers</Text>
             <View style={styles.ratingContainer}>
-              <Entypo name="star" size={35} color="#FFF038" />
-              <Entypo name="star" size={35} color="#FFF038" />
-              <Entypo name="star" size={35} color="#FFF038" />
-              <Entypo name="star" size={35} color="#FFF038" />
-              <Entypo name="star" size={35} color="#FFF038" />
+              <Entypo name="star" size={35} color="#FFF200" />
+              <Entypo name="star" size={35} color="#FFF200" />
+              <Entypo name="star" size={35} color="#FFF200" />
+              <Entypo name="star" size={35} color="#FFF200" />
+              <Entypo name="star" size={35} color="#FFF200" />
               <Text style={styles.rating}>4.1</Text>
               <Text style={styles.totalRating}>(2709)</Text>
             </View>
@@ -278,7 +278,7 @@ const styles = StyleSheet.create({
   sellingPrice: {
     fontSize: 16,
     fontWeight: "bold",
-    backgroundColor: "#FFF038",
+    backgroundColor: "#FFF200",
     paddingVertical: 5,
     paddingHorizontal: 10,
   },
