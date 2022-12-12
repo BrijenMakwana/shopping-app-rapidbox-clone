@@ -161,69 +161,92 @@ const ShareProductWithAvatar = () => {
   );
 };
 
+const StickyButtons = () => {
+  return (
+    <View style={styles.stickyBtnContainer}>
+      <View style={styles.btnContainer1}>
+        <Text style={styles.btnText1}>wishlist</Text>
+      </View>
+      <View style={styles.btnContainer2}>
+        <Text style={styles.btnText2}>add to bag</Text>
+      </View>
+    </View>
+  );
+};
+
 const ProductScreen = () => {
   const route = useRoute();
   return (
-    <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
-      <Image
-        source={{
-          uri: route.params?.imageUrl,
-        }}
-        style={styles.image}
-      />
-      <View style={styles.productInfo}>
-        <View style={styles.priceContainer}>
-          <View style={styles.prices}>
-            <Text style={styles.sellingPrice}>₹595</Text>
-            <Text style={styles.actualprice}>₹999</Text>
-          </View>
-          <Text style={styles.discount}>40% off</Text>
-        </View>
-        <Text style={styles.name}>Atom brown Sneakers</Text>
-        <View style={styles.ratingContainer}>
-          <Entypo name="star" size={35} color="#FFF038" />
-          <Entypo name="star" size={35} color="#FFF038" />
-          <Entypo name="star" size={35} color="#FFF038" />
-          <Entypo name="star" size={35} color="#FFF038" />
-          <Entypo name="star" size={35} color="#FFF038" />
-          <Text style={styles.rating}>4.1</Text>
-          <Text style={styles.totalRating}>(2709)</Text>
-        </View>
-      </View>
-      <ShareProduct />
-      <ProductStates />
-      <ColorsAvailable />
-      <DeliveryComponent />
-      <SizeComponent />
-      <ShareProductWithAvatar />
-      <ProductDescription />
-      <View style={styles.similarProductsContainer}>
-        <View style={styles.similarProductsHeader}>
-          <Text style={styles.similarProductsHeading}>Similar Products</Text>
-          <View style={styles.viewAllBtn}>
-            <Text style={styles.viewAllText}>view all</Text>
-          </View>
-        </View>
-        <View style={styles.productImagesContainer}>
-          <FlatList
-            data={sneakersData}
-            renderItem={({ item }) => (
-              <SimilarProduct
-                image={item.image}
-                sellingPrice={item.sellingPrice}
-                actualPrice={item.actualPrice}
-                rating={item.rating}
-              />
-            )}
-            keyExtractor={(item) => item.id}
-            horizontal
-            showsHorizontalScrollIndicator={false}
-            ListHeaderComponent={<></>}
+    <>
+      <>
+        <ScrollView
+          style={styles.container}
+          showsVerticalScrollIndicator={false}
+        >
+          <Image
+            source={{
+              uri: route.params?.imageUrl,
+            }}
+            style={styles.image}
           />
-        </View>
-      </View>
-      <View style={{ height: 150 }} />
-    </ScrollView>
+          <View style={styles.productInfo}>
+            <View style={styles.priceContainer}>
+              <View style={styles.prices}>
+                <Text style={styles.sellingPrice}>₹595</Text>
+                <Text style={styles.actualprice}>₹999</Text>
+              </View>
+              <Text style={styles.discount}>40% off</Text>
+            </View>
+            <Text style={styles.name}>Atom brown Sneakers</Text>
+            <View style={styles.ratingContainer}>
+              <Entypo name="star" size={35} color="#FFF038" />
+              <Entypo name="star" size={35} color="#FFF038" />
+              <Entypo name="star" size={35} color="#FFF038" />
+              <Entypo name="star" size={35} color="#FFF038" />
+              <Entypo name="star" size={35} color="#FFF038" />
+              <Text style={styles.rating}>4.1</Text>
+              <Text style={styles.totalRating}>(2709)</Text>
+            </View>
+          </View>
+          <ShareProduct />
+          <ProductStates />
+          <ColorsAvailable />
+          <DeliveryComponent />
+          <SizeComponent />
+          <ShareProductWithAvatar />
+          <ProductDescription />
+          <View style={styles.similarProductsContainer}>
+            <View style={styles.similarProductsHeader}>
+              <Text style={styles.similarProductsHeading}>
+                Similar Products
+              </Text>
+              <View style={styles.viewAllBtn}>
+                <Text style={styles.viewAllText}>view all</Text>
+              </View>
+            </View>
+            <View style={styles.productImagesContainer}>
+              <FlatList
+                data={sneakersData}
+                renderItem={({ item }) => (
+                  <SimilarProduct
+                    image={item.image}
+                    sellingPrice={item.sellingPrice}
+                    actualPrice={item.actualPrice}
+                    rating={item.rating}
+                  />
+                )}
+                keyExtractor={(item) => item.id}
+                horizontal
+                showsHorizontalScrollIndicator={false}
+                ListHeaderComponent={<></>}
+              />
+            </View>
+          </View>
+          <View style={{ height: 150 }} />
+        </ScrollView>
+      </>
+      <StickyButtons />
+    </>
   );
 };
 
@@ -477,11 +500,11 @@ const styles = StyleSheet.create({
   },
   similarProductsContainer: {
     paddingTop: 10,
-    paddingBottom: 20,
+    paddingBottom: 30,
     width: "90%",
     alignSelf: "center",
     backgroundColor: "#fff",
-    marginVertical: 15,
+    marginVertical: 10,
     borderRadius: 10,
   },
   similarProductsHeader: {
@@ -511,5 +534,45 @@ const styles = StyleSheet.create({
   productImagesContainer: {
     marginTop: 20,
     paddingLeft: 15,
+  },
+  stickyBtnContainer: {
+    paddingVertical: 10,
+    backgroundColor: "#F5F5F5",
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    position: "absolute",
+    bottom: 0,
+    width: "100%",
+    borderTopWidth: 0.2,
+    borderTopColor: "#DCDCDC",
+  },
+  btnContainer1: {
+    paddingVertical: 10,
+    paddingHorizontal: 25,
+    borderWidth: 1,
+    borderColor: "#000",
+    borderRadius: 20,
+    marginHorizontal: 10,
+    backgroundColor: "#fff",
+  },
+  btnText1: {
+    fontSize: 13,
+    textTransform: "uppercase",
+    fontWeight: "600",
+    color: "gray",
+  },
+  btnContainer2: {
+    paddingVertical: 10,
+    paddingHorizontal: 35,
+    backgroundColor: "#FFA500",
+    borderRadius: 20,
+    marginHorizontal: 10,
+  },
+  btnText2: {
+    fontSize: 13,
+    textTransform: "uppercase",
+    fontWeight: "600",
+    color: "#fff",
   },
 });
