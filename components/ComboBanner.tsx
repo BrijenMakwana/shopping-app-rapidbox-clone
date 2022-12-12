@@ -41,20 +41,22 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: "#77D1C4",
     marginTop: 7,
-    padding: 20,
+    paddingHorizontal: 10,
+    paddingBottom: 15,
   },
   heading: {
     textTransform: "capitalize",
     color: "#fff",
-    fontSize: 30,
-    fontWeight: "700",
+    fontSize: 24,
+    fontWeight: "600",
     textAlign: "center",
     padding: 10,
+    marginTop: 5,
   },
   productsContainer: {
     flexDirection: "row",
     justifyContent: "space-between",
-    marginTop: 12,
+    marginTop: 10,
   },
   productCard: {
     backgroundColor: "#fff",
@@ -62,15 +64,16 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   productImage: {
-    width: 160,
+    width: 150,
     height: 180,
   },
   offerText: {
     marginTop: 10,
-    fontSize: 15,
+    fontSize: 13,
+    fontWeight: "600",
   },
   price: {
-    marginTop: 5,
+    marginTop: 3,
     fontSize: 18,
     fontWeight: "600",
   },
