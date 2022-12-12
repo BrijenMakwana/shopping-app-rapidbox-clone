@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
   },
   heading: {
     textTransform: "uppercase",
-    fontSize: 17,
+    fontSize: 12,
     textAlign: "center",
     fontWeight: "bold",
   },
@@ -67,27 +67,30 @@ const styles = StyleSheet.create({
     padding: 10,
     backgroundColor: "#f9f9f9",
   },
-  leftContainer: {},
+  leftContainer: {
+    width: "55%",
+  },
   leftImage: {
     height: 250,
-    width: 250,
+    width: "100%",
   },
   btnContainer: {
     justifyContent: "center",
     padding: 10,
+    width: "100%",
   },
   btnTextOne: {
-    fontSize: 25,
+    fontSize: 20,
     fontWeight: "300",
     textTransform: "capitalize",
   },
   btnTextTwo: {
-    fontSize: 16,
+    fontSize: 14,
     textTransform: "capitalize",
     marginTop: 5,
   },
   btnTextThree: {
-    fontSize: 15,
+    fontSize: 12,
     textTransform: "capitalize",
     color: "grey",
     marginTop: 5,
@@ -95,9 +98,10 @@ const styles = StyleSheet.create({
   rightContainer: {
     padding: 10,
     flexDirection: "column-reverse",
+    width: "45%",
   },
   rightImage: {
     height: 150,
-    width: 150,
+    width: "100%",
   },
 });
