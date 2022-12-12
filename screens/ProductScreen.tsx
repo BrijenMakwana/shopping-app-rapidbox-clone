@@ -26,7 +26,7 @@ const ShareProduct = () => {
         Share this product with your friends And earn 75 Rapidcoins
       </Text>
       <View style={styles.iconContainer}>
-        <FontAwesome name="whatsapp" size={22} color="#fff" />
+        <FontAwesome name="whatsapp" size={20} color="#fff" />
         <Text style={styles.iconText}>share</Text>
       </View>
     </View>
@@ -38,7 +38,7 @@ const ProductStates = () => {
     <View style={styles.statesContainer}>
       <View style={styles.stateContainer}>
         <View style={styles.stateIconContainer}>
-          <AntDesign name="hearto" size={24} color="#000" />
+          <AntDesign name="hearto" size={20} color="#000" />
           <Text style={styles.stateNumber}>0</Text>
         </View>
         <Text style={styles.stateName}>Likes</Text>
@@ -48,7 +48,7 @@ const ProductStates = () => {
         <View style={styles.stateIconContainer}>
           <MaterialCommunityIcons
             name="pentagon-outline"
-            size={24}
+            size={20}
             color="#000"
           />
           <Text style={styles.stateNumber}>0</Text>
@@ -58,7 +58,7 @@ const ProductStates = () => {
 
       <View style={styles.stateContainer}>
         <View style={styles.stateIconContainer}>
-          <EvilIcons name="share-google" size={26} color="#000" />
+          <EvilIcons name="share-google" size={20} color="#000" />
           <Text style={styles.stateNumber}>0</Text>
         </View>
         <Text style={styles.stateName}>Shares</Text>
@@ -199,11 +199,11 @@ const ProductScreen = () => {
             </View>
             <Text style={styles.name}>Atom brown Sneakers</Text>
             <View style={styles.ratingContainer}>
-              <Entypo name="star" size={35} color="#FFF200" />
-              <Entypo name="star" size={35} color="#FFF200" />
-              <Entypo name="star" size={35} color="#FFF200" />
-              <Entypo name="star" size={35} color="#FFF200" />
-              <Entypo name="star" size={35} color="#FFF200" />
+              <Entypo name="star" size={28} color="#FFF200" />
+              <Entypo name="star" size={28} color="#FFF200" />
+              <Entypo name="star" size={28} color="#FFF200" />
+              <Entypo name="star" size={28} color="#FFF200" />
+              <Entypo name="star" size={28} color="#FFF200" />
               <Text style={styles.rating}>4.1</Text>
               <Text style={styles.totalRating}>(2709)</Text>
             </View>
@@ -262,7 +262,8 @@ const styles = StyleSheet.create({
     height: 500,
   },
   productInfo: {
-    padding: 20,
+    paddingHorizontal: 20,
+    paddingVertical: 15,
     backgroundColor: "#fff",
   },
   priceContainer: {
@@ -297,7 +298,7 @@ const styles = StyleSheet.create({
   },
   name: {
     marginTop: 7,
-    fontSize: 16,
+    fontSize: 14,
     fontWeight: "400",
     color: "grey",
     textTransform: "capitalize",
@@ -327,7 +328,7 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
   },
   shareText: {
-    fontSize: 14,
+    fontSize: 12,
     flex: 1,
     marginRight: 15,
   },
@@ -338,11 +339,11 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     alignItems: "center",
     justifyContent: "center",
-    width: 120,
+    width: 110,
   },
   iconText: {
     marginLeft: 10,
-    fontSize: 14,
+    fontSize: 12,
     fontWeight: "600",
     color: "#fff",
     textTransform: "uppercase",
@@ -364,13 +365,13 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   stateNumber: {
-    fontSize: 16,
+    fontSize: 14,
     fontWeight: "600",
     marginLeft: 3,
   },
   stateName: {
     marginTop: 5,
-    fontSize: 15,
+    fontSize: 13,
     color: "gray",
     textTransform: "capitalize",
   },
@@ -383,7 +384,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
   },
   colorHeading: {
-    fontSize: 15,
+    fontSize: 13,
     color: "gray",
   },
   availableImagesContainer: {
@@ -397,7 +398,7 @@ const styles = StyleSheet.create({
   },
   deliveryComponentContainer: {
     flexDirection: "row",
-    paddingVertical: 10,
+    paddingVertical: 15,
     paddingHorizontal: 20,
     alignItems: "center",
     justifyContent: "center",
@@ -408,7 +409,7 @@ const styles = StyleSheet.create({
     marginVertical: 5,
   },
   deliveryMessage: {
-    fontSize: 15,
+    fontSize: 14,
     color: "gray",
     marginLeft: 5,
     fontWeight: "300",
@@ -432,12 +433,12 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
   },
   heading: {
-    fontSize: 15,
+    fontSize: 13,
     color: "gray",
     fontWeight: "300",
   },
   sizeChartText: {
-    fontSize: 14,
+    fontSize: 12,
     fontWeight: "600",
     textTransform: "uppercase",
   },
@@ -457,11 +458,11 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   sizeText: {
-    fontSize: 14,
+    fontSize: 12,
     fontWeight: "600",
   },
   checkDelivery: {
-    fontSize: 14,
+    fontSize: 13,
     color: "gray",
     fontWeight: "300",
     marginTop: 20,
@@ -493,10 +494,10 @@ const styles = StyleSheet.create({
     width: "70%",
   },
   shareTextAvatar: {
-    fontSize: 14,
+    fontSize: 13,
     marginBottom: 20,
-    color: "gray",
-    fontWeight: "300",
+    color: "#000",
+    fontWeight: "100",
   },
   similarProductsContainer: {
     paddingTop: 10,
