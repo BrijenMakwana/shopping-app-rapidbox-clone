@@ -39,7 +39,7 @@ const ProductItem = (props: ProductItemProps) => {
           <Text style={styles.actualPrice}>₹{actualPrice}</Text>
         </View>
         <View style={styles.ratingContainer}>
-          <Entypo name="star" size={19} color="#FFB934" />
+          <Entypo name="star" size={16} color="#FFB934" />
           <Text style={styles.rating}>{rating}</Text>
         </View>
       </View>
@@ -57,13 +57,13 @@ const styles = StyleSheet.create({
   },
   image: {
     width: "100%",
-    height: 270,
+    height: 250,
   },
   premiumContainer: {
     backgroundColor: "#FFF200",
     position: "absolute",
-    paddingHorizontal: 10,
-    paddingVertical: 5,
+    paddingHorizontal: 8,
+    paddingVertical: 4,
     borderTopRightRadius: 8,
     borderBottomRightRadius: 8,
     top: 15,
@@ -71,23 +71,23 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   premiumText: {
-    fontSize: 12,
+    fontSize: 10,
   },
   productInformation: {
     padding: 10,
     flexDirection: "row",
     justifyContent: "space-between",
-    marginBottom: 22,
+    marginBottom: 9,
   },
   priceContainer: {
     flexDirection: "row",
   },
   sellingPrice: {
-    fontSize: 20,
+    fontSize: 16,
   },
   actualPrice: {
-    fontSize: 18,
-    marginLeft: 7,
+    fontSize: 16,
+    marginLeft: 5,
     color: "grey",
     textDecorationStyle: "solid",
     textDecorationLine: "line-through",
@@ -96,9 +96,10 @@ const styles = StyleSheet.create({
   },
   ratingContainer: {
     flexDirection: "row",
+    alignContent: "center",
   },
   rating: {
-    fontSize: 15,
+    fontSize: 13,
     marginLeft: 1,
   },
 });
