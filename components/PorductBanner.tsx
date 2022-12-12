@@ -64,7 +64,7 @@ export default PorductBanner;
 
 const styles = StyleSheet.create({
   container: {
-    height: 300,
+    height: 250,
     marginTop: 10,
   },
   imageBackground: {
@@ -74,13 +74,13 @@ const styles = StyleSheet.create({
   heading: {
     fontSize: 40,
     textAlign: "center",
-    marginTop: 20,
+    marginTop: 15,
     letterSpacing: 2,
     fontFamily: "Sacramento-Regular",
   },
   productsContainer: {
     flexDirection: "row",
-    marginTop: 35,
+    marginTop: 20,
     justifyContent: "space-around",
   },
 });

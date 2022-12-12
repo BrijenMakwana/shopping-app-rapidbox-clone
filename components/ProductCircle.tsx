@@ -25,17 +25,16 @@ export default ProductCircle;
 
 const styles = StyleSheet.create({
   container: {
-    width: 120,
     alignItems: "center",
   },
   image: {
-    height: 120,
-    width: 120,
-    borderRadius: 65,
+    height: 100,
+    width: 100,
+    borderRadius: 50,
   },
   productType: {
-    fontSize: 18,
-    marginTop: 10,
+    fontSize: 15,
+    marginTop: 7,
     textTransform: "capitalize",
     fontWeight: "300",
     textAlign: "center",
