@@ -53,10 +53,10 @@ const styles = StyleSheet.create({
     marginVertical: 5,
   },
   heading: {
-    fontSize: 14,
+    fontSize: 13,
   },
   description: {
-    fontSize: 13,
+    fontSize: 12,
     fontWeight: "300",
     color: "gray",
     marginTop: 10,
