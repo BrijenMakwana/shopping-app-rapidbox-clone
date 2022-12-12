@@ -58,7 +58,13 @@ function RootNavigator() {
       <Stack.Screen
         name="Product"
         component={ProductScreen}
-        options={{ headerShown: true }}
+        options={{
+          title: "",
+          headerShown: true,
+          headerRight: () => (
+            <SimpleLineIcons name="bag" size={20} color="#000" />
+          ),
+        }}
       />
     </Stack.Navigator>
   );
