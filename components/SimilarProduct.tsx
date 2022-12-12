@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
   },
   image: {
     width: "100%",
-    height: 180,
+    height: 170,
   },
   productInformation: {
     flexDirection: "row",

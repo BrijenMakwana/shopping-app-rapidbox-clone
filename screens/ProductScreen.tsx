@@ -515,7 +515,7 @@ const styles = StyleSheet.create({
     paddingLeft: 15,
   },
   similarProductsHeading: {
-    fontSize: 15,
+    fontSize: 13,
     textTransform: "capitalize",
   },
   viewAllBtn: {
