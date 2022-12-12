@@ -30,13 +30,13 @@ const styles = StyleSheet.create({
     marginHorizontal: 5,
   },
   image: {
-    width: 60,
-    height: 60,
-    borderRadius: 30,
+    width: 50,
+    height: 50,
+    borderRadius: 25,
   },
   categoryText: {
     fontWeight: "bold",
-    fontSize: 15,
+    fontSize: 13,
     textTransform: "capitalize",
     marginTop: 10,
   },
