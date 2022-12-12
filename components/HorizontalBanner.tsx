@@ -41,9 +41,9 @@ const styles = StyleSheet.create({
     flexDirection: "row",
   },
   image: {
-    width: 90,
-    height: 90,
-    marginLeft: 15,
+    width: 70,
+    height: 70,
+    marginLeft: 10,
   },
   infoContainer: {
     alignItems: "center",
@@ -51,24 +51,25 @@ const styles = StyleSheet.create({
   },
   heading: {
     fontFamily: "Sacramento-Regular",
-    fontSize: 27,
+    fontSize: 25,
     fontWeight: "600",
   },
   categoryName: {
     textTransform: "capitalize",
-    fontSize: 20,
-    fontWeight: "200",
+    fontSize: 17,
+    fontWeight: "100",
   },
   btnContainer: {
     backgroundColor: "#3B4357",
     position: "absolute",
-    padding: 3,
+    paddingHorizontal: 5,
+    paddingVertical: 2,
     right: 5,
-    bottom: 5,
+    bottom: 3,
   },
   btnText: {
     color: "#fff",
-    fontSize: 12,
+    fontSize: 7,
     fontWeight: "600",
   },
 });
