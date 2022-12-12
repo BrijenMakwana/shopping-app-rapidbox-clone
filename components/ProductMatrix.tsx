@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
   },
   heading: {
     textTransform: "uppercase",
-    fontSize: 20,
+    fontSize: 15,
     textAlign: "center",
   },
   imagesContainer: {
@@ -66,8 +66,8 @@ const styles = StyleSheet.create({
     marginTop: 18,
   },
   image: {
-    width: 200,
-    height: 200,
+    width: "47%",
+    height: 180,
     margin: 5,
   },
   btnContainer: {
@@ -80,17 +80,17 @@ const styles = StyleSheet.create({
     padding: 10,
   },
   btnTextOne: {
-    fontSize: 25,
-    fontWeight: "300",
+    fontSize: 20,
+    fontWeight: "400",
     textTransform: "capitalize",
   },
   btnTextTwo: {
-    fontSize: 16,
+    fontSize: 14,
     textTransform: "capitalize",
     marginTop: 5,
   },
   btnTextThree: {
-    fontSize: 20,
+    fontSize: 16,
     textTransform: "capitalize",
     color: "grey",
     marginTop: 5,

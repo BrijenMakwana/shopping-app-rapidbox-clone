@@ -26,7 +26,7 @@ export default Category;
 const styles = StyleSheet.create({
   container: {
     alignItems: "center",
-    minWidth: 80,
+    minWidth: 65,
     marginHorizontal: 5,
   },
   image: {
