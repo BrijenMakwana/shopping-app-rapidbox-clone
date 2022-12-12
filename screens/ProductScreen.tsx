@@ -1,4 +1,11 @@
-import { Image, ScrollView, StyleSheet, Text, View } from "react-native";
+import {
+  Image,
+  ScrollView,
+  StyleSheet,
+  Text,
+  View,
+  FlatList,
+} from "react-native";
 import React from "react";
 import {
   Entypo,
@@ -9,6 +16,8 @@ import {
 } from "@expo/vector-icons";
 import ProductDescription from "../components/ProductDescription";
 import { useRoute } from "@react-navigation/native";
+import { sneakersData } from "../assets/data/data";
+import SimilarProduct from "../components/SimilarProduct";
 
 const ShareProduct = () => {
   return (
@@ -152,15 +161,10 @@ const ShareProductWithAvatar = () => {
   );
 };
 
-export type ProductScreenProps = {
-  imageUrl: string;
-};
-
-const ProductScreen = (props: ProductScreenProps) => {
-  const { imageUrl } = props;
+const ProductScreen = () => {
   const route = useRoute();
   return (
-    <ScrollView style={styles.container}>
+    <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
       <Image
         source={{
           uri: route.params?.imageUrl,
@@ -193,6 +197,32 @@ const ProductScreen = (props: ProductScreenProps) => {
       <SizeComponent />
       <ShareProductWithAvatar />
       <ProductDescription />
+      <View style={styles.similarProductsContainer}>
+        <View style={styles.similarProductsHeader}>
+          <Text style={styles.similarProductsHeading}>Similar Products</Text>
+          <View style={styles.viewAllBtn}>
+            <Text style={styles.viewAllText}>view all</Text>
+          </View>
+        </View>
+        <View style={styles.productImagesContainer}>
+          <FlatList
+            data={sneakersData}
+            renderItem={({ item }) => (
+              <SimilarProduct
+                image={item.image}
+                sellingPrice={item.sellingPrice}
+                actualPrice={item.actualPrice}
+                rating={item.rating}
+              />
+            )}
+            keyExtractor={(item) => item.id}
+            horizontal
+            showsHorizontalScrollIndicator={false}
+            ListHeaderComponent={<></>}
+          />
+        </View>
+      </View>
+      <View style={{ height: 150 }} />
     </ScrollView>
   );
 };
@@ -444,5 +474,42 @@ const styles = StyleSheet.create({
     marginBottom: 20,
     color: "gray",
     fontWeight: "300",
+  },
+  similarProductsContainer: {
+    paddingTop: 10,
+    paddingBottom: 20,
+    width: "90%",
+    alignSelf: "center",
+    backgroundColor: "#fff",
+    marginVertical: 15,
+    borderRadius: 10,
+  },
+  similarProductsHeader: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    paddingLeft: 15,
+  },
+  similarProductsHeading: {
+    fontSize: 15,
+    textTransform: "capitalize",
+  },
+  viewAllBtn: {
+    borderWidth: 1,
+    borderColor: "#000",
+    paddingVertical: 7,
+    paddingHorizontal: 20,
+    borderRadius: 20,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  viewAllText: {
+    textTransform: "capitalize",
+    fontSize: 10,
+    fontWeight: "300",
+  },
+  productImagesContainer: {
+    marginTop: 20,
+    paddingLeft: 15,
   },
 });
