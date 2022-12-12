@@ -44,7 +44,7 @@ export default PromiseBanner;
 
 const styles = StyleSheet.create({
   container: {
-    height: 150,
+    height: 130,
   },
   image: {
     flex: 1,
@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
   heading: {
     color: "#fff",
     textTransform: "capitalize",
-    fontSize: 20,
+    fontSize: 14,
     fontWeight: "bold",
   },
   promisesContainer: {
@@ -64,16 +64,17 @@ const styles = StyleSheet.create({
     width: "100%",
   },
   promiseContainer: {
-    borderWidth: 2,
+    borderWidth: 1.5,
     borderColor: "#000",
-    minWidth: 70,
-    minHeight: 70,
-    maxWidth: 100,
     paddingHorizontal: 5,
-    paddingVertical: 10,
+    paddingVertical: 7,
+
+    height: 60,
+    minWidth: 60,
+    maxWidth: 80,
   },
   promiseText: {
-    fontSize: 12,
+    fontSize: 10,
     fontWeight: "bold",
   },
 });
