@@ -39,7 +39,7 @@ const FanCard = () => {
         />
         <Pressable style={styles.btnContainer}>
           <Text style={styles.btnText}>check out</Text>
-          <FontAwesome name="arrow-circle-right" size={27} color="black" />
+          <FontAwesome name="arrow-circle-right" size={24} color="black" />
         </Pressable>
       </View>
     </View>
@@ -55,8 +55,8 @@ const styles = StyleSheet.create({
   },
   leftContainer: {},
   image: {
-    width: 145,
-    height: 145,
+    width: 135,
+    height: 120,
     resizeMode: "stretch",
   },
   rightContainer: {
@@ -67,25 +67,26 @@ const styles = StyleSheet.create({
   },
   heading: {
     color: "#FFF200",
-    fontSize: 25,
+    fontSize: 20,
     textTransform: "uppercase",
   },
   fanImage: {
-    width: 200,
-    height: 200,
+    width: 180,
+    height: 180,
   },
   btnContainer: {
     backgroundColor: "#FFF200",
     borderRadius: 7,
     flexDirection: "row",
-    padding: 7,
+    paddingVertical: 4,
+    paddingHorizontal: 3,
     alignItems: "center",
     justifyContent: "space-between",
   },
   btnText: {
     marginRight: 10,
-    fontSize: 18,
-    fontWeight: "600",
+    fontSize: 13,
+    fontWeight: "700",
     textTransform: "capitalize",
   },
 });
