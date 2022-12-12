@@ -1,5 +1,6 @@
-import { StyleSheet, Text, View, Image } from "react-native";
+import { StyleSheet, Text, View, Image, Pressable } from "react-native";
 import React from "react";
+import { useNavigation } from "@react-navigation/native";
 
 export type ProductMatrixProps = {
   heading: string;
@@ -11,8 +12,16 @@ export type ProductMatrixProps = {
 
 const ProductMatrix = (props: ProductMatrixProps) => {
   const { heading, imagesUrl, textOne, textTwo, textThree } = props;
+  const navigation = useNavigation();
   return (
-    <View style={styles.container}>
+    <Pressable
+      style={styles.container}
+      onPress={() =>
+        navigation.navigate("Products", {
+          data: "sneakers",
+        })
+      }
+    >
       <Text style={styles.heading}>{heading}</Text>
 
       {/* images container */}
@@ -34,7 +43,7 @@ const ProductMatrix = (props: ProductMatrixProps) => {
           <Text style={styles.btnTextThree}>{textThree}</Text>
         </View>
       </View>
-    </View>
+    </Pressable>
   );
 };
 

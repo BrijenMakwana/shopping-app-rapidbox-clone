@@ -73,14 +73,14 @@ export default function TabOneScreen() {
               textThree={productMatrixData2.textThree}
             />
             <ProductThreeImage
-              heading={ProductThreeImagesDataHis.heding}
+              heading={ProductThreeImagesDataHis.heading}
               imagesUrl={ProductThreeImagesDataHis.imagesUrl}
               btnTextOne={ProductThreeImagesDataHis.textOne}
               btnTextTwo={ProductThreeImagesDataHis.textTwo}
               btnTextThree={ProductThreeImagesDataHis.textThree}
             />
             <ProductThreeImage
-              heading={ProductThreeImagesDataHer.heding}
+              heading={ProductThreeImagesDataHer.heading}
               imagesUrl={ProductThreeImagesDataHer.imagesUrl}
               btnTextOne={ProductThreeImagesDataHer.textOne}
               btnTextTwo={ProductThreeImagesDataHer.textTwo}

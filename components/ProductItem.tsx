@@ -17,7 +17,11 @@ const ProductItem = (props: ProductItemProps) => {
   return (
     <Pressable
       style={styles.container}
-      onPress={() => navigation.navigate("Product")}
+      onPress={() =>
+        navigation.navigate("Product", {
+          imageUrl: image,
+        })
+      }
     >
       <Image
         source={{

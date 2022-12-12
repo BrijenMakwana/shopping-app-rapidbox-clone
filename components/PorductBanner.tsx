@@ -33,7 +33,11 @@ const PorductBanner = (props: PorductBannerProps) => {
   return (
     <Pressable
       style={styles.container}
-      onPress={() => navigation.navigate("Products")}
+      onPress={() =>
+        navigation.navigate("Products", {
+          data: "sneakers",
+        })
+      }
     >
       <ImageBackground
         source={{

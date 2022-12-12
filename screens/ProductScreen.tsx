@@ -7,6 +7,8 @@ import {
   MaterialCommunityIcons,
   EvilIcons,
 } from "@expo/vector-icons";
+import ProductDescription from "../components/ProductDescription";
+import { useRoute } from "@react-navigation/native";
 
 const ShareProduct = () => {
   return (
@@ -137,7 +139,7 @@ const ShareProductWithAvatar = () => {
         style={styles.avatarImage}
       />
       <View style={styles.shareTextContainer}>
-        <Text style={styles.shareTextAvatar} wordw>
+        <Text style={styles.shareTextAvatar}>
           Share this product with your friends and get 75 Rapidcoins on each
           purchase they make
         </Text>
@@ -150,12 +152,18 @@ const ShareProductWithAvatar = () => {
   );
 };
 
-const ProductScreen = () => {
+export type ProductScreenProps = {
+  imageUrl: string;
+};
+
+const ProductScreen = (props: ProductScreenProps) => {
+  const { imageUrl } = props;
+  const route = useRoute();
   return (
     <ScrollView style={styles.container}>
       <Image
         source={{
-          uri: "https://images.unsplash.com/photo-1576672843344-f01907a9d40c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+          uri: route.params?.imageUrl,
         }}
         style={styles.image}
       />
@@ -184,6 +192,7 @@ const ProductScreen = () => {
       <DeliveryComponent />
       <SizeComponent />
       <ShareProductWithAvatar />
+      <ProductDescription />
     </ScrollView>
   );
 };
