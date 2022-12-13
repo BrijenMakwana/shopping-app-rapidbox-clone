@@ -20,21 +20,21 @@
 
 ## Screenshot
 
-<img src="./assets/images/Screenshots/preview_1.jpg" width="100" height="400"/>
-![](./assets/images/Screenshots/preview_2.jpg)
-![](./assets/images/Screenshots/preview_3.jpg)
-![](./assets/images/Screenshots/preview_4.jpg)
-![](./assets/images/Screenshots/preview_5.jpg)
-![](./assets/images/Screenshots/preview_6.jpg)
-![](./assets/images/Screenshots/preview_7.jpg)
-![](./assets/images/Screenshots/preview_8.jpg)
-![](./assets/images/Screenshots/preview_9.jpg)
-![](./assets/images/Screenshots/preview_10.jpg)
-![](./assets/images/Screenshots/preview_11.jpg)
-![](./assets/images/Screenshots/preview_12.jpg)
-![](./assets/images/Screenshots/preview_13.jpg)
-![](./assets/images/Screenshots/preview_14.jpg)
-![](./assets/images/Screenshots/preview_15.jpg)
+<img src="./assets/images/Screenshots/preview_1.jpg" width="250" height="400"/>
+<img src="./assets/images/Screenshots/preview_2.jpg" width="250" height="400"/>
+<img src="./assets/images/Screenshots/preview_3.jpg" width="250" height="400"/>
+<img src="./assets/images/Screenshots/preview_4.jpg" width="250" height="400"/>
+<img src="./assets/images/Screenshots/preview_5.jpg" width="250" height="400"/>
+<img src="./assets/images/Screenshots/preview_6.jpg" width="250" height="400"/>
+<img src="./assets/images/Screenshots/preview_7.jpg" width="250" height="400"/>
+<img src="./assets/images/Screenshots/preview_8.jpg" width="250" height="400"/>
+<img src="./assets/images/Screenshots/preview_9.jpg" width="250" height="400"/>
+<img src="./assets/images/Screenshots/preview_10.jpg" width="250" height="400"/>
+<img src="./assets/images/Screenshots/preview_11.jpg" width="250" height="400"/>
+<img src="./assets/images/Screenshots/preview_12.jpg" width="250" height="400"/>
+<img src="./assets/images/Screenshots/preview_13.jpg" width="250" height="400"/>
+<img src="./assets/images/Screenshots/preview_14.jpg" width="250" height="400"/>
+<img src="./assets/images/Screenshots/preview_15.jpg" width="250" height="400"/>
 
 ## Download the app
 
