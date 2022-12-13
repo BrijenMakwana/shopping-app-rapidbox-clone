@@ -39,6 +39,7 @@ export default function TabOneScreen() {
           />
         )}
         keyExtractor={(item) => item.id}
+        showsVerticalScrollIndicator={false}
         ListHeaderComponent={
           <>
             <Categories />

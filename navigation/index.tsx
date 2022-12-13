@@ -10,10 +10,11 @@ import {
   NavigationContainer,
   DefaultTheme,
   DarkTheme,
+  useNavigation,
 } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import * as React from "react";
-import { ColorSchemeName, View, Image, Text } from "react-native";
+import { ColorSchemeName, View, Image, Text, Pressable } from "react-native";
 
 import Colors from "../constants/Colors";
 import useColorScheme from "../hooks/useColorScheme";
@@ -43,8 +44,17 @@ export default function Navigation({
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
 function RootNavigator() {
+  const navigation = useNavigation();
   return (
-    <Stack.Navigator>
+    <Stack.Navigator
+      screenOptions={{
+        headerLeft: () => (
+          <Pressable onPress={() => navigation.goBack()}>
+            <MaterialIcons name="arrow-back-ios" size={22} color="black" />
+          </Pressable>
+        ),
+      }}
+    >
       <Stack.Screen
         name="Root"
         component={BottomTabNavigator}
@@ -53,7 +63,26 @@ function RootNavigator() {
       <Stack.Screen
         name="Products"
         component={ProductsScreen}
-        options={{ headerShown: true }}
+        options={{
+          headerShown: true,
+          title: "",
+          headerRight: () => {
+            return (
+              <View
+                style={{
+                  flexDirection: "row",
+                  paddingHorizontal: 10,
+                  width: 80,
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                }}
+              >
+                <AntDesign name="search1" size={20} color="#000" />
+                <SimpleLineIcons name="bag" size={20} color="#000" />
+              </View>
+            );
+          },
+        }}
       />
       <Stack.Screen
         name="Product"
