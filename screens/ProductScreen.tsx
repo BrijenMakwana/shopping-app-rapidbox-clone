@@ -176,6 +176,13 @@ const StickyButtons = () => {
 
 const ProductScreen = () => {
   const route = useRoute();
+  const { imageUrl, actualPrice, sellingPrice } = route.params;
+
+  const discount = () => {
+    return `${Math.round(
+      ((actualPrice - sellingPrice) * 100) / actualPrice
+    )}% off`;
+  };
   return (
     <>
       <>
@@ -185,17 +192,17 @@ const ProductScreen = () => {
         >
           <Image
             source={{
-              uri: route.params?.imageUrl,
+              uri: imageUrl,
             }}
             style={styles.image}
           />
           <View style={styles.productInfo}>
             <View style={styles.priceContainer}>
               <View style={styles.prices}>
-                <Text style={styles.sellingPrice}>₹595</Text>
-                <Text style={styles.actualprice}>₹999</Text>
+                <Text style={styles.sellingPrice}>₹{sellingPrice}</Text>
+                <Text style={styles.actualprice}>₹{actualPrice}</Text>
               </View>
-              <Text style={styles.discount}>40% off</Text>
+              <Text style={styles.discount}>{discount()}</Text>
             </View>
             <Text style={styles.name}>Atom brown Sneakers</Text>
             <View style={styles.ratingContainer}>

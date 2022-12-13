@@ -20,6 +20,8 @@ const ProductItem = (props: ProductItemProps) => {
       onPress={() =>
         navigation.navigate("Product", {
           imageUrl: image,
+          actualPrice: actualPrice,
+          sellingPrice: sellingPrice,
         })
       }
     >
