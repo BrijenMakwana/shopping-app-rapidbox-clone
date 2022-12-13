@@ -5,7 +5,7 @@
 ## Table of contents
 
 - [Overview](#overview)
-- [Screenshot](#screenshot)
+- [Screenshot](#screenshots)
 - [Download the app](#Download-the-app)
 - [Built with](#Built-with)
 
@@ -18,23 +18,25 @@
 - I made an effort to mirror the design of the original app exactly.
 - The app only has a frontend design at the moment, and dummy data is being pulled from a data file.
 
-## Screenshot
+## Screenshots
 
-<img src="./assets/images/Screenshots/preview_1.jpg" width="250" height="400"/>
-<img src="./assets/images/Screenshots/preview_2.jpg" width="250" height="400"/>
-<img src="./assets/images/Screenshots/preview_3.jpg" width="250" height="400"/>
-<img src="./assets/images/Screenshots/preview_4.jpg" width="250" height="400"/>
-<img src="./assets/images/Screenshots/preview_5.jpg" width="250" height="400"/>
-<img src="./assets/images/Screenshots/preview_6.jpg" width="250" height="400"/>
-<img src="./assets/images/Screenshots/preview_7.jpg" width="250" height="400"/>
-<img src="./assets/images/Screenshots/preview_8.jpg" width="250" height="400"/>
-<img src="./assets/images/Screenshots/preview_9.jpg" width="250" height="400"/>
-<img src="./assets/images/Screenshots/preview_10.jpg" width="250" height="400"/>
-<img src="./assets/images/Screenshots/preview_11.jpg" width="250" height="400"/>
-<img src="./assets/images/Screenshots/preview_12.jpg" width="250" height="400"/>
-<img src="./assets/images/Screenshots/preview_13.jpg" width="250" height="400"/>
-<img src="./assets/images/Screenshots/preview_14.jpg" width="250" height="400"/>
-<img src="./assets/images/Screenshots/preview_15.jpg" width="250" height="400"/>
+<div style="display:flex;flex-wrap:wrap;">
+<img src="./assets/images/Screenshots/preview_1.jpg" width="300" height="550"/>
+<img src="./assets/images/Screenshots/preview_2.jpg" width="300" height="550"/>
+<img src="./assets/images/Screenshots/preview_3.jpg" width="300" height="550"/>
+<img src="./assets/images/Screenshots/preview_4.jpg" width="300" height="550"/>
+<img src="./assets/images/Screenshots/preview_5.jpg" width="300" height="550"/>
+<img src="./assets/images/Screenshots/preview_6.jpg" width="300" height="550"/>
+<img src="./assets/images/Screenshots/preview_7.jpg" width="300" height="550"/>
+<img src="./assets/images/Screenshots/preview_8.jpg" width="300" height="550"/>
+<img src="./assets/images/Screenshots/preview_9.jpg" width="300" height="550"/>
+<img src="./assets/images/Screenshots/preview_10.jpg" width="300" height="550"/>
+<img src="./assets/images/Screenshots/preview_11.jpg" width="300" height="550"/>
+<img src="./assets/images/Screenshots/preview_12.jpg" width="300" height="550"/>
+<img src="./assets/images/Screenshots/preview_13.jpg" width="300" height="550"/>
+<img src="./assets/images/Screenshots/preview_14.jpg" width="300" height="550"/>
+<img src="./assets/images/Screenshots/preview_15.jpg" width="300" height="550"/>
+</div>
 
 ## Download the app
 
