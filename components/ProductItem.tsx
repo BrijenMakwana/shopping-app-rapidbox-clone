@@ -22,6 +22,7 @@ const ProductItem = (props: ProductItemProps) => {
           imageUrl: image,
           actualPrice: actualPrice,
           sellingPrice: sellingPrice,
+          rating: rating,
         })
       }
     >

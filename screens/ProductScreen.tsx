@@ -176,13 +176,14 @@ const StickyButtons = () => {
 
 const ProductScreen = () => {
   const route = useRoute();
-  const { imageUrl, actualPrice, sellingPrice } = route.params;
+  const { imageUrl, actualPrice, sellingPrice, rating } = route.params;
 
   const discount = () => {
     return `${Math.round(
       ((actualPrice - sellingPrice) * 100) / actualPrice
     )}% off`;
   };
+
   return (
     <>
       <>
@@ -206,12 +207,19 @@ const ProductScreen = () => {
             </View>
             <Text style={styles.name}>Atom brown Sneakers</Text>
             <View style={styles.ratingContainer}>
-              <Entypo name="star" size={28} color="#FFF200" />
-              <Entypo name="star" size={28} color="#FFF200" />
-              <Entypo name="star" size={28} color="#FFF200" />
-              <Entypo name="star" size={28} color="#FFF200" />
-              <Entypo name="star" size={28} color="#FFF200" />
-              <Text style={styles.rating}>4.1</Text>
+              {[1, 2, 3, 4, 5].map((_, index) => {
+                if (index < rating) {
+                  return (
+                    <Entypo name="star" size={28} color="#FFF200" key={index} />
+                  );
+                } else {
+                  return (
+                    <Entypo name="star" size={28} color="#CCCCCC" key={index} />
+                  );
+                }
+              })}
+
+              <Text style={styles.rating}>{rating}</Text>
               <Text style={styles.totalRating}>(2709)</Text>
             </View>
           </View>
