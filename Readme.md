@@ -20,7 +20,7 @@
 
 ## Screenshot
 
-![](./assets/images/Screenshots/preview_1.jpg | width=100)
+<img src="./assets/images/Screenshots/preview_1.jpg" width="100" height="400"/>
 ![](./assets/images/Screenshots/preview_2.jpg)
 ![](./assets/images/Screenshots/preview_3.jpg)
 ![](./assets/images/Screenshots/preview_4.jpg)
