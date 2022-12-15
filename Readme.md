@@ -1,4 +1,4 @@
-<img src="https://play-lh.googleusercontent.com/ny3-SBXBhWBVxRgr6A0wMIfdl1j9bK4Thb8k6LYJDgh41nZYyEPulYBsVAqPvH0hSA" width="250" height="250"/>
+<img src="https://play-lh.googleusercontent.com/ny3-SBXBhWBVxRgr6A0wMIfdl1j9bK4Thb8k6LYJDgh41nZYyEPulYBsVAqPvH0hSA" width="200" height="200"/>
 
 # Rapidbox App Clone (Shopping App)
 
